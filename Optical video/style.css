@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    color: gray;
+}
+h6{
+    display: inline;
+    margin-left: 7px;
+}
+#head{
+    background-color: black; 
+    color: white;
+}
+#enveloppe{
+    margin-top: 10px;
+    
+}
+#enveloppe p i{
+    margin-left: 7px;
+}
+#titre{
+    margin-top: 10px;
+    text-align: center;
+}
+#titre li{
+    margin-left: 5px;
+    
+}
+#langue{
+    margin-top: 10px;
+}
+#rs{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#rs p{
+    margin-left: 16px;
+    font-size: 23px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#sary{
+    margin-left: -20px;
+    position: absolute;
+}
+#menu{
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 90px;
+    
+}
+#menu ul li a{
+    margin-left: 20px;
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+}
+#menu ul li a:hover{
+    text-decoration: rgb(13, 13, 107) underline;
+}
+#search{
+    font-size: 25px;
+}
+#date{
+    display: flex;
+    flex-wrap: wrap;
+}
+#date hr{
+    width: 35px;
+    border: 1px solid rgb(182, 42, 65);
+    margin-top: 15px;
+}
+#date p{
+    font-size: 20px;
+    color: rgb(189, 44, 92);
+    margin-left: 10px;
+}
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+.side-menu:checked ~ menu{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+@media (min-width: 768px) {
+    #menu{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+    #nav li{
+        float: left;
+    }
+    #nav a:hover{
+        background-color: transparent;
+        color: grey;      
+    } 
+    .hamb{
+        display: none;
+    }
+}
+
+
+
+#corps{
+    padding-top: 200px;
+    background-color: rgb(34, 161, 161);
+    height: 630px;
+}
+#rond{
+    background-color: rgb(224, 129, 161);
+    height: 400px;
+    width: 400px;
+    border-radius: 100% ;
+    margin-left: 740px;
+    position: absolute;
+    margin-top: -60px;
+}
+#title h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#submit{
+    margin-top: 25px;
+}
+#submit button{
+    font-size: 20px;
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+#h3{
+    margin-top: 40px;
+}
+#h3 h3{
+    
+    font-family: 'Felix Titling';
+    font-weight: bolder;
+}
+#h3 p{
+    padding-top: 10px;
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+}
+#tendances{
+    margin-top: 25px;
+}
+#tendances p{
+    color: rgb(156, 156, 156);
+    font-size: 20px;
+}
+#tendances img{
+    width: 300px;
+}
+#H3{
+    padding-top: 30px;
+    font-family: 'Felix Titling';
+    font-weight: bolder;
+}
+#arrivages{
+    margin-top: 60px;
+}
+#arrivages img{
+    width: 300px;
+}
+span{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+#super{
+   
+    margin-top: 25px;
+}
+#super p{
+    margin-left: 20px;
+    color: rgb(31, 109, 253);
+    font-size: 20px;
+}
+#super img{
+    width: 300px;
+}
+#super .lgd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#photo{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+#tmp{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.footer{
+    color: white;
+    background-color: rgb(26, 25, 25);
+    height: 500px;
+}
+#addresse{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+#addresse h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+#addresse p{
+    margin-top: 30px;
+}
+#mail{
+    height: 40px;
+}
+#btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(153, 182, 245);
+}
+#res{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#res p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.footer1{
+    color: white;
+    height: 50px;
+    background-color: black;
+}
+.footer1 p{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 500px;
+    height: 500px;
+}

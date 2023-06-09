@@ -1,0 +1,284 @@
+body{
+    overflow-x: hidden;
+}
+#head1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 11px;
+    background-color: rgb(179, 179, 179);
+}
+#head1 p{
+    margin-top: 8px;
+}
+#tc p{
+    float: right;
+}
+#logo p{
+    float: right;
+    font-size: 20px;
+    margin-left: 32px;
+    margin-top: 15px;
+}
+#head2 h1{
+    font-size: 30px;
+}
+li{
+    list-style-type: none;
+}
+#head3 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: black;
+    height: 50px;
+    width: 1170px;
+    margin-left: -15px;
+}
+#head3 ul li{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    display: inline-block;
+}
+#head3 ul li a{
+    margin-left: 38px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+} 
+#head3 ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+#head3 ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#titre{
+    background-image: url("img/robes-combinaisons.jpg");
+    height: 350px;
+}
+#titre h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+#titre button{
+    margin-left: 440px;
+    margin-top: 30px;
+    border: black;
+    background-color: rgb(247, 247, 247);
+    height: 60px;
+    width: 230px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#pub{
+    margin-top: 50px;
+}
+#titre2{
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("img/43ec643e415690208f5d933cf9dcef84.jpg");
+    margin-top: 80px;
+}
+#titre2 h1{
+    margin-top: 50px;
+}
+#img{
+    margin-top: 50px;
+}
+#img span{
+    margin-top: 70px;
+    color: palevioletred;
+}
+#img p{
+    margin-top: 20px;
+}
+#stock{
+    background-image: url("img/retour\ en\ stock.jpg");
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 60px;
+    color: black;
+}
+#stock h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#stock h2{
+    font-family: 'Candara';
+}
+#image{
+    margin-top: 50px;
+}
+#image span{
+    margin-top: 70px;
+    color: palevioletred;
+}
+#Acheter{
+    padding-top: 80px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    background-image: url("img/acer01.jpg");
+}
+#Acheter h1{
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Acheter h2{
+    font-family: 'Candara';
+}
+#images{
+    margin-top: 40px;
+}
+#images p{
+    margin-top: 20px;
+}
+#slide{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Candara';
+}
+#slide #mp h2{
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: gray;
+}
+#slide #nom h1{
+    font-size: 30px;
+}
+#liste{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#liste1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 120px;
+}
+#liste1 li{
+    margin-top: 10px;
+    margin-left: 96px;
+}
+#news{
+    margin-top: 50px;
+    text-align: center;
+}
+#news h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#boite{
+    margin-top: 60px;
+    text-align: center;
+}
+#boite #mail{
+    border: none;
+    width: 300px;
+    height: 40px;
+    color: black;
+    cursor: pointer;
+}
+#boite #mail:hover{
+    border: none;
+    background-color: rgb(196, 195, 202);
+}
+#boite #btn{
+    border: none;
+    background-color: gray;
+    width: 300px;
+    height: 40px;
+    color: white;
+}
+#boite #btn:hover{
+    background-color: rgb(75, 75, 238);
+}
+#cocher{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#cocher #check{
+    margin-top: -25px;
+}
+#cocher p{
+    margin-left: 10px;
+}
+#rs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 350px;
+    font-size: 20px;
+    margin-top: 80px;
+}
+#rs p{
+    margin-left: 30px;
+}
+#tdn{
+    margin-top: 50px;
+}
+#tdn h1{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+#pied .col-lg-3{
+    background-color: black;
+    height: 300px;
+    color: rgb(187, 187, 187);
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 30px;
+}
+#pied .col-lg-3 h1{
+    font-size: 30px;
+}
+#pied .col-lg-3 p{
+    margin-top: 20px;
+}
+#pied #cart img{
+    margin-top: 100px;
+}
+#Mk{
+    background-color: black;
+    text-align: center;
+}
+#Mk h1{
+    font-family: 'Candara';
+    color: rgb(160, 93, 69);
+    font-size: 50px;
+}
+#Mk p{
+    color: rgb(187, 187, 187);
+}
+label #btn, label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
